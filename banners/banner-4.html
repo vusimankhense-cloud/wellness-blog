@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1200" />
+<title>Banner 4</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #2d6a4f 0%, #1b4332 40%, #6a0572 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Split design — accent panel on right */
+  .accent-panel {
+    position: absolute;
+    right: 0; top: 0; bottom: 0;
+    width: 320px;
+    background: rgba(255,255,255,0.05);
+    border-left: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .accent-stat {
+    text-align: center;
+    padding: 0 30px;
+  }
+  .accent-stat .num {
+    font-size: 48px;
+    font-weight: 800;
+    color: #74c69d;
+    line-height: 1;
+    display: block;
+  }
+  .accent-stat .lbl {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+  .accent-divider {
+    width: 60px;
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  .bg-circles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .bg-circles span { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.04); }
+  .c1 { width: 400px; height: 400px; top: -140px; left: -100px; }
+  .c2 { width: 220px; height: 220px; bottom: -80px; left: 300px; }
+
+  .top-label { position: absolute; top: 44px; left: 64px; }
+  .tag {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 13px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: rgba(255,255,255,0.9);
+  }
+
+  .content {
+    text-align: left;
+    padding: 0 64px;
+    padding-right: 380px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  .emoji {
+    font-size: 80px; line-height: 1; margin-bottom: 24px; display: block;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.3));
+  }
+  h1 {
+    font-size: 56px; font-weight: 800; color: #ffffff;
+    line-height: 1.2; letter-spacing: -1.5px;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
+  h1 span { color: #74c69d; }
+
+  .branding {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 18px 64px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(0,0,0,0.2);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .brand-name { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; color: #ffffff; }
+  .brand-name .leaf { font-size: 22px; }
+  .brand-url { font-size: 15px; color: rgba(255,255,255,0.55); }
+  .brand-dot { width: 6px; height: 6px; border-radius: 50%; background: #74c69d; }
+  .brand-right { display: flex; align-items: center; gap: 12px; }
+  .deco-line {
+    position: absolute; left: 0; right: 0; height: 4px; top: 0;
+    background: linear-gradient(90deg, #74c69d, #b5a0d8, #74c69d);
+  }
+</style>
+</head>
+<body>
+  <div class="deco-line"></div>
+  <div class="bg-circles">
+    <span class="c1"></span><span class="c2"></span>
+  </div>
+  <div class="accent-panel">
+    <div class="accent-stat">
+      <span class="num">30%</span>
+      <div class="lbl">visceral fat loss<br>through diet alone</div>
+    </div>
+    <div class="accent-divider"></div>
+    <div class="accent-stat">
+      <span class="num">0</span>
+      <div class="lbl">gym sessions<br>required</div>
+    </div>
+    <div class="accent-divider"></div>
+    <div class="accent-stat">
+      <span class="num">7</span>
+      <div class="lbl">proven natural<br>strategies inside</div>
+    </div>
+  </div>
+  <div class="top-label"><span class="tag">🌱 Natural Health</span></div>
+  <div class="content">
+    <span class="emoji">🏋️</span>
+    <h1>How to Lose <span>Belly Fat</span> Naturally Without Exercise</h1>
+  </div>
+  <div class="branding">
+    <div class="brand-name"><span class="leaf">🌿</span> The Wellness Key</div>
+    <div class="brand-right">
+      <div class="brand-dot"></div>
+      <span class="brand-url">thewellnesskey.com</span>
+    </div>
+  </div>
+</body>
+</html>

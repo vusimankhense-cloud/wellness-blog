@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1200" />
+<title>Banner 3</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(145deg, #1a1a2e 0%, #2d6a4f 50%, #4a2c6e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .bg-circles { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .bg-circles span { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.04); }
+  .c1 { width: 420px; height: 420px; top: -140px; right: -80px; }
+  .c2 { width: 300px; height: 300px; bottom: -100px; left: -60px; }
+  .c3 { width: 180px; height: 180px; top: 160px; right: 300px; background: rgba(255,255,255,0.025) !important; }
+
+  /* Stars decoration */
+  .stars { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .star {
+    position: absolute;
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+  }
+  .s1 { top: 80px; left: 120px; }
+  .s2 { top: 150px; right: 180px; width: 4px; height: 4px; }
+  .s3 { top: 300px; left: 80px; }
+  .s4 { top: 220px; right: 400px; width: 5px; height: 5px; background: rgba(116,198,157,0.6) !important; }
+  .s5 { top: 420px; right: 120px; }
+  .s6 { top: 100px; left: 400px; width: 4px; height: 4px; }
+
+  .top-label { position: absolute; top: 44px; left: 64px; }
+  .tag {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+    padding: 6px 18px;
+    font-size: 13px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: rgba(255,255,255,0.85);
+  }
+
+  .content {
+    text-align: center;
+    padding: 0 80px;
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+  }
+  .emoji {
+    font-size: 90px; line-height: 1; margin-bottom: 28px; display: block;
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.4));
+  }
+  h1 {
+    font-size: 60px; font-weight: 800; color: #ffffff;
+    line-height: 1.15; letter-spacing: -1.5px;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.4);
+  }
+  h1 span { color: #74c69d; }
+
+  .branding {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 20px 64px;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(0,0,0,0.25);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .brand-name { display: flex; align-items: center; gap: 10px; font-size: 20px; font-weight: 700; color: #ffffff; }
+  .brand-name .leaf { font-size: 22px; }
+  .brand-url { font-size: 15px; color: rgba(255,255,255,0.55); }
+  .brand-dot { width: 6px; height: 6px; border-radius: 50%; background: #74c69d; }
+  .brand-right { display: flex; align-items: center; gap: 12px; }
+  .deco-line {
+    position: absolute; left: 0; right: 0; height: 4px; top: 0;
+    background: linear-gradient(90deg, #74c69d, #b5a0d8, #74c69d);
+  }
+</style>
+</head>
+<body>
+  <div class="deco-line"></div>
+  <div class="bg-circles">
+    <span class="c1"></span><span class="c2"></span><span class="c3"></span>
+  </div>
+  <div class="stars">
+    <div class="star s1"></div><div class="star s2"></div><div class="star s3"></div>
+    <div class="star s4"></div><div class="star s5"></div><div class="star s6"></div>
+  </div>
+  <div class="top-label"><span class="tag">😴 Sleep & Recovery</span></div>
+  <div class="content">
+    <span class="emoji">😴</span>
+    <h1>How <span>Sleep Quality</span> Directly Impacts Your Weight</h1>
+  </div>
+  <div class="branding">
+    <div class="brand-name"><span class="leaf">🌿</span> The Wellness Key</div>
+    <div class="brand-right">
+      <div class="brand-dot"></div>
+      <span class="brand-url">thewellnesskey.com</span>
+    </div>
+  </div>
+</body>
+</html>
