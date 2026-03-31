@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — The Wellness Key</title>
+  <meta name="description" content="Browse all articles on natural weight loss, mindful eating, sleep, and holistic wellness from The Wellness Key Blog." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="leaf">🌿</span> The Wellness Key
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="article-1.html">Articles</a></li>
+        <li><a href="https://www.thewellnesskey.com/" target="_blank" class="nav-cta">Visit Site</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-badge">📖 All Articles</div>
+    <h1>The Wellness Key Blog</h1>
+    <p>Natural weight loss tips, mindful habits, and science-backed wellness strategies.</p>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <button class="filter-btn active">All Topics</button>
+    <button class="filter-btn">Metabolism</button>
+    <button class="filter-btn">Mindful Eating</button>
+    <button class="filter-btn">Sleep & Recovery</button>
+    <button class="filter-btn">Nutrition</button>
+  </div>
+
+  <!-- FEATURED (large card) -->
+  <div style="max-width:1100px; margin:3rem auto; padding:0 1.5rem;">
+    <div style="background:linear-gradient(135deg, var(--green-dark), var(--purple-dark)); border-radius:16px; overflow:hidden; display:grid; grid-template-columns:1fr 1fr; min-height:300px;">
+      <div style="padding:2.5rem; color:white; display:flex; flex-direction:column; justify-content:center;">
+        <div style="background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.3); border-radius:50px; display:inline-block; padding:.25rem .85rem; font-size:.75rem; font-weight:700; letter-spacing:.5px; text-transform:uppercase; margin-bottom:1rem; width:fit-content;">⭐ Editor's Pick</div>
+        <h2 style="font-size:clamp(1.3rem,2.5vw,1.9rem); font-weight:800; line-height:1.3; margin-bottom:.75rem;">5 Natural Ways to Boost Your Metabolism Today</h2>
+        <p style="opacity:.85; font-size:.92rem; margin-bottom:1.5rem;">Discover the small daily habits that genuinely rev up your fat-burning engine — no supplements required.</p>
+        <a href="article-1.html" class="btn btn-primary" style="width:fit-content;">Read Now →</a>
+      </div>
+      <div style="display:flex; align-items:center; justify-content:center; font-size:7rem; background:rgba(255,255,255,.05); padding:2rem;">🔥</div>
+    </div>
+  </div>
+
+  <!-- BLOG GRID -->
+  <div class="blog-grid">
+
+    <article class="card">
+      <div class="card-thumb thumb-1">🔥</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag">Metabolism</span>
+          <span class="card-date">March 28, 2026</span>
+        </div>
+        <h3>5 Natural Ways to Boost Your Metabolism Today</h3>
+        <p>Small daily habits — from cold water hydration to protein-rich meals — that genuinely rev up your fat-burning engine.</p>
+        <a href="article-1.html" class="card-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-thumb thumb-2">🍽️</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag purple">Mindful Eating</span>
+          <span class="card-date">March 20, 2026</span>
+        </div>
+        <h3>The Power of Mindful Eating for Natural Weight Loss</h3>
+        <p>How slowing down at mealtimes rewires hunger signals and effortlessly reduces calorie intake — no counting required.</p>
+        <a href="article-2.html" class="card-link">Read Article →</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-thumb thumb-3">😴</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag">Sleep & Recovery</span>
+          <span class="card-date">March 12, 2026</span>
+        </div>
+        <h3>How Sleep Quality Directly Impacts Your Weight</h3>
+        <p>The surprising science behind why poor sleep triggers hunger hormones and what to do about it tonight.</p>
+        <a href="article-3.html" class="card-link">Read Article →</a>
+      </div>
+    </article>
+
+    <!-- Placeholder upcoming articles -->
+    <article class="card" style="opacity:.55; pointer-events:none;">
+      <div class="card-thumb thumb-4">🥗</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag">Nutrition</span>
+          <span class="card-date">Coming Soon</span>
+        </div>
+        <h3>The Anti-Inflammatory Diet: A Beginner's Guide</h3>
+        <p>How reducing chronic inflammation through food choices can unlock stubborn fat loss and improve energy levels.</p>
+        <span class="card-link" style="color:var(--gray-300);">Coming Soon</span>
+      </div>
+    </article>
+
+    <article class="card" style="opacity:.55; pointer-events:none;">
+      <div class="card-thumb thumb-1">🏃</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag">Movement</span>
+          <span class="card-date">Coming Soon</span>
+        </div>
+        <h3>HIIT vs. Walking: Which Burns More Fat Long-Term?</h3>
+        <p>A closer look at two popular exercise approaches and which one better supports lasting weight management.</p>
+        <span class="card-link" style="color:var(--gray-300);">Coming Soon</span>
+      </div>
+    </article>
+
+    <article class="card" style="opacity:.55; pointer-events:none;">
+      <div class="card-thumb thumb-2">💧</div>
+      <div class="card-body">
+        <div class="card-meta">
+          <span class="card-tag purple">Hydration</span>
+          <span class="card-date">Coming Soon</span>
+        </div>
+        <h3>How Proper Hydration Accelerates Fat Loss</h3>
+        <p>The underrated role of water in metabolism, appetite regulation, and achieving your body composition goals.</p>
+        <span class="card-link" style="color:var(--gray-300);">Coming Soon</span>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter" style="margin-top:2rem;">
+    <div class="newsletter-inner">
+      <div style="font-size:2.5rem; margin-bottom:1rem;">📬</div>
+      <h2>Never Miss an Article</h2>
+      <p>Get new wellness tips delivered to your inbox every week. Join thousands of readers on their health journey.</p>
+      <form class="newsletter-form" onsubmit="return false;">
+        <input type="email" placeholder="Your email address" />
+        <button type="submit" class="btn btn-primary">Subscribe Free</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="font-size:1.1rem;"><span>🌿</span> The Wellness Key</div>
+        <p>Your trusted source for natural weight loss tips, holistic health advice, and evidence-based wellness strategies.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Articles</h4>
+        <ul>
+          <li><a href="article-1.html">Boost Your Metabolism</a></li>
+          <li><a href="article-2.html">Mindful Eating</a></li>
+          <li><a href="article-3.html">Sleep & Weight Loss</a></li>
+          <li><a href="blog.html">All Articles</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="https://www.thewellnesskey.com/" target="_blank">The Wellness Key ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Wellness Key Blog. All rights reserved.</span>
+      <span>Built with 💚 for your wellness journey · <a href="https://www.thewellnesskey.com/" target="_blank">thewellnesskey.com</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
